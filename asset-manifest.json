@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/ohlsengrace.github.io/static/css/main.01c183f5.css",
+    "main.js": "/ohlsengrace.github.io/static/js/main.df066503.js",
+    "static/js/787.a2bc199b.chunk.js": "/ohlsengrace.github.io/static/js/787.a2bc199b.chunk.js",
+    "static/media/aspen.png": "/ohlsengrace.github.io/static/media/aspen.6c8ac6620093a83dbcd4.png",
+    "static/media/hero.jpeg": "/ohlsengrace.github.io/static/media/hero.bf0fd5aaa3c611ed67e7.jpeg",
+    "static/media/fleetwood.png": "/ohlsengrace.github.io/static/media/fleetwood.d7c8edf37c65cef15d3d.png",
+    "static/media/hitachi.png": "/ohlsengrace.github.io/static/media/hitachi.aad8673ad6f47097e7e5.png",
+    "static/media/jakes.png": "/ohlsengrace.github.io/static/media/jakes.b871bb7919e42df861ee.png",
+    "static/media/personal-website.png": "/ohlsengrace.github.io/static/media/personal-website.566836182518f077b9d3.png",
+    "static/media/HawaiiProfile.jpg": "/ohlsengrace.github.io/static/media/HawaiiProfile.c67b8581f677fc8f574e.jpg",
+    "static/media/blueprint.png": "/ohlsengrace.github.io/static/media/blueprint.a00bf1d25aaf2988bcf4.png",
+    "static/media/Resume.pdf": "/ohlsengrace.github.io/static/media/Resume.7772199b91f60f6f6452.pdf",
+    "index.html": "/ohlsengrace.github.io/index.html",
+    "main.01c183f5.css.map": "/ohlsengrace.github.io/static/css/main.01c183f5.css.map",
+    "main.df066503.js.map": "/ohlsengrace.github.io/static/js/main.df066503.js.map",
+    "787.a2bc199b.chunk.js.map": "/ohlsengrace.github.io/static/js/787.a2bc199b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01c183f5.css",
+    "static/js/main.df066503.js"
+  ]
+}
