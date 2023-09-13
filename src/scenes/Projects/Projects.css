@@ -1,0 +1,43 @@
+.Projects {
+    width: 80%;
+    margin: auto;
+}
+
+.Projects h1 {
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2%;
+    justify-content: center;
+    width: 100%;
+    align-items: stretch;
+}
+
+.projects .btn {
+    height: 50px;
+    width: 50px;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.projects .project {
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    padding: 20px;
+    width: 300px;
+    height: 600px;
+    text-wrap: wrap;
+    text-overflow: clip;
+}
+
+
+.projects .project img {
+    width: 100%;
+    height: auto;
+}
