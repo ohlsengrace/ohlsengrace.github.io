@@ -6,10 +6,10 @@ import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 import projOneImg from '../../assets/personal-website.png';
-import projTwoImg from '../../assets/jakes.png';
-import projThreeImg from '../../assets/hitachi.png';
-import projFourImg from '../../assets/blueprint.png';
-import projFiveImg from '../../assets/fleetwood.png';
+import projTwoImg from '../../assets/hitachi.png';
+import projThreeImg from '../../assets/blueprint.png';
+import projFourImg from '../../assets/MotiYoda.jpeg';
+import projFiveImg from '../../assets/nodejs.png';
 
 
 export const Projects = () => {
@@ -19,38 +19,43 @@ export const Projects = () => {
             {
                 id: 0,
                 title: 'Personal Website',
-                subtitle: 'Single web page to display profile and projects',
+                status: 'In Progress',
+                subtitle: 'Website to display my profile, projects, and resume using ReactJS and GitHub pages.',
                 image: projOneImg,
-                imageAlt: 'graceohlsen.com'
+                imageAlt: 'ohlsengrace.github.io',
             },
             {
                 id: 1,
-                title: "Jake's on Main Website",
-                subtitle: "Website for small business in St. Charles, MO",
+                title: 'HE Internal Tool',
+                status: 'In Progress',
+                subtitle: 'Redesign of front-end for an internal tool at Hitachi Energy using React and SyncFusion.',
                 image: projTwoImg,
-                imageAlt: 'lig-jakes-on-main.com'
-            },
-            {
-                id: 2,
-                title: 'HE Reg Site',
-                subtitle: 'During internship at Hitachi Energy, redesigned the client management web portal',
-                image: projThreeImg,
                 imageAlt: 'HE VS Reg Site'
             },
             {
-                id: 3,
-                title: 'Blueprint Project',
-                subtitle: 'Single web page to display profile and projects',
-                image: projFourImg,
-                imageAlt: 'graceohlsen.com'
+                id: 2,
+                title: 'Blueprint Boulder',
+                status: 'TBD',
+                subtitle: "I volunteer for Blueprint Boulder, a non-profit that creates technologies for other non-profits. This year's project is TBD.",
+                image: projThreeImg,
+                imageAlt: 'Blueprint Boulder'
             },
             {
-                id: 4,
-                title: "Another Site",
-                subtitle: "Website for small business in St. Charles, MO",
-                image: projFiveImg,
-                imageAlt: 'lig-jakes-on-main.com'
-            }
+                id: 3,
+                title: "MotiYoda",
+                subtitle: "Python program that alters motivational quotes to resemble Yoda's speech, object-subject-verb structure. Created for CU's 24-hour Hackathon.",
+                image: projFourImg,
+                imageAlt: 'https://www.linkedin.com/posts/lucaangeletti_do-or-do-not-there-is-no-try-yoda-activity-6437971031696113664-4Bq1/',
+                link: 'https://github.com/maxwmeiser/hackathon-march2022'
+            },
+            {
+              id: 4,
+              title: "Pinventory",
+              subtitle: "Led team to create a NodeJS backend for a textbook inventory web portal. Made for high school to use to track textbooks.",
+              image: projFiveImg,
+              imageAlt: 'https://www.forestadmin.com/blog/best-node-js-apps-examples-to-inspire-your-next-project/',
+              link: 'https://github.com/ohlsengrace/public-git/tree/main/pinventory_backend-main'
+          }
         ]
 
 
@@ -150,7 +155,14 @@ export const Projects = () => {
                             return(
                                 <div className='project'>
                                     <img src={slide.image} alt={slide.imageAlt}/>
-                                    <h3>{slide.title}</h3>
+                                    
+                                    {slide.link ? 
+                                      <h3>
+                                        <a href={slide.link} target='_blank' rel='noreferrer'>{slide.title}</a>
+                                      </h3> 
+                                      : 
+                                      <h3>{slide.title}</h3>
+                                    }
                                     <h4>{slide.subtitle}</h4>
                                 </div>
                             )

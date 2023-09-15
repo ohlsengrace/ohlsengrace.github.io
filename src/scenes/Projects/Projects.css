@@ -7,6 +7,11 @@
     text-align: center;
 }
 
+.Projects a {
+    color: black;
+    text-decoration: none;
+}
+
 .projects {
     display: flex;
     flex-direction: row;
@@ -15,6 +20,7 @@
     justify-content: center;
     width: 100%;
     align-items: stretch;
+
 }
 
 .projects .btn {
@@ -31,7 +37,7 @@
     border-radius: 25px;
     padding: 20px;
     width: 300px;
-    height: 600px;
+    height: 650px;
     text-wrap: wrap;
     text-overflow: clip;
 }
@@ -39,5 +45,5 @@
 
 .projects .project img {
     width: 100%;
-    height: auto;
+    height: 160px;
 }

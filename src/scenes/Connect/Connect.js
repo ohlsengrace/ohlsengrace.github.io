@@ -13,16 +13,16 @@ export const Connect = () => {
             <div className='connect-icons'>
                 
                 <a href='https://www.linkedin.com/in/grace-ohlsen-70592b21a/?profileId=ACoAADdPfDUBUEAx7qn3iQzvhRgtYHhyKQjF8wI'>
-                    <LinkedInIcon sx={{width:'100px',height:'auto'}}/>
+                    <LinkedInIcon className='icon' sx={{width:'100px',height:'auto'}}/>
                 </a>
                 <a href='https://github.com/ohlsengrace'>
-                    <GitHubIcon  sx={{width:'100px',height:'auto'}}/>
+                    <GitHubIcon className='icon' sx={{width:'100px',height:'auto'}}/>
                 </a>
                 <a href='mailto: ohlsengrace@gmail.com'>
-                    <EmailIcon sx={{width:'100px',height:'auto'}}/>
+                    <EmailIcon className='icon' sx={{width:'100px',height:'auto'}}/>
                 </a>
                 <a href='https://open.spotify.com/user/ohlseng?si=6bdf855946124a94'>
-                    <LibraryMusicIcon sx={{width:'100px',height:'auto'}}/>
+                    <LibraryMusicIcon className='icon' sx={{width:'100px',height:'auto'}}/>
                 </a>
                 
             </div>

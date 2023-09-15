@@ -1,5 +1,5 @@
 import { Button } from '@mui/material';
-import graceResume from '../../assets/Resume.pdf';
+import graceResume from '../../assets/GraceOhlsenResumeCopy.pdf';
 import './Resume.css'
 
 export const Resume = () => {
@@ -12,7 +12,7 @@ export const Resume = () => {
     return(
         <div className='Resume'>
             <h1>Click to open resume</h1>
-            <Button variant='contained' onClick={openResume} rel='noopener noreferrer'>View Resume</Button>
+            <Button variant='contained' onClick={openResume} rel='noopener noreferrer'>Click Me!</Button>
         </div>
     )
 }
