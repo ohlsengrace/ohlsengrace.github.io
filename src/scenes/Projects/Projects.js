@@ -108,7 +108,11 @@ export const Projects = () => {
     }, [numDisplayed]);
 
 
-    
+    // TODO: Fix bug that messes up active slides when the window size decreases
+
+
+
+
     const numSlides = projects.length;
     const [atStart, setAtStart] = useState(true);
     const [atEnd, setAtEnd] = useState(false);
