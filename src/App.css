@@ -42,8 +42,8 @@ p {
   
 .NavBar {
     margin: 0;
+    /* background-color: #96C8F9; */
     background-color: transparent;
-    color:white;
     width: 100%;
     height: auto;;
     position: absolute;
@@ -55,7 +55,6 @@ p {
     align-items: stretch;
     list-style: none;
     cursor:pointer;
-    color: white;
 }
   
 .NavBar .nav-link {
@@ -65,5 +64,5 @@ p {
     font-weight: 400;
     flex-grow: 1;
     cursor: pointer;
-    color: white;
+    color: #3E3F53;
 }
