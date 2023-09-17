@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.03efa9c9.css",
-    "main.js": "/static/js/main.3c6f84f5.js",
+    "main.js": "/static/js/main.a72e5e3b.js",
     "static/js/787.a2bc199b.chunk.js": "/static/js/787.a2bc199b.chunk.js",
     "static/media/aspen.png": "/static/media/aspen.6c8ac6620093a83dbcd4.png",
+    "static/media/Thumbnail.png": "/static/media/Thumbnail.1120b2d70903e3fc1696.png",
     "static/media/hero.jpeg": "/static/media/hero.bf0fd5aaa3c611ed67e7.jpeg",
     "static/media/hitachi.png": "/static/media/hitachi.aad8673ad6f47097e7e5.png",
-    "static/media/personal-website.png": "/static/media/personal-website.566836182518f077b9d3.png",
     "static/media/HawaiiProfile.jpg": "/static/media/HawaiiProfile.c67b8581f677fc8f574e.jpg",
     "static/media/blueprint.png": "/static/media/blueprint.a00bf1d25aaf2988bcf4.png",
     "static/media/graceCursive.png": "/static/media/graceCursive.d0a945b8c77ed17098d9.png",
@@ -15,11 +15,11 @@
     "static/media/MotiYoda.jpeg": "/static/media/MotiYoda.6a1d4ef3abcf290763fc.jpeg",
     "index.html": "/index.html",
     "main.03efa9c9.css.map": "/static/css/main.03efa9c9.css.map",
-    "main.3c6f84f5.js.map": "/static/js/main.3c6f84f5.js.map",
+    "main.a72e5e3b.js.map": "/static/js/main.a72e5e3b.js.map",
     "787.a2bc199b.chunk.js.map": "/static/js/787.a2bc199b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.03efa9c9.css",
-    "static/js/main.3c6f84f5.js"
+    "static/js/main.a72e5e3b.js"
   ]
 }
