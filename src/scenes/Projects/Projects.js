@@ -5,7 +5,7 @@ import { IconButton } from '@mui/material';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
-import projOneImg from '../../assets/personal-website.png';
+import projOneImg from '../../assets/Thumbnail.png';
 import projTwoImg from '../../assets/hitachi.png';
 import projThreeImg from '../../assets/blueprint.png';
 import projFourImg from '../../assets/MotiYoda.jpeg';
