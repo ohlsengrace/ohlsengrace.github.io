@@ -38,7 +38,8 @@ export const Projects = () => {
         status: 'TBD',
         subtitle: "I volunteer for Blueprint Boulder, a non-profit that creates technologies for other non-profits. This year's project is TBD.",
         image: projThreeImg,
-        imageAlt: 'Blueprint Boulder'
+        imageAlt: 'Blueprint Boulder',
+        link: 'https://blueprintboulder.org/'
       },
       {
         id: 3,
