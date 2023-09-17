@@ -28,7 +28,7 @@ export const Projects = () => {
         id: 1,
         title: 'HE Internal Tool',
         status: 'In Progress',
-        subtitle: 'Redesign of front-end for an internal tool at Hitachi Energy using React and SyncFusion.',
+        subtitle: 'Redesign of front-end for an internal tool at Hitachi Energy using ReactJS.',
         image: projTwoImg,
         imageAlt: 'HE VS Reg Site'
       },
