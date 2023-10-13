@@ -1,5 +1,5 @@
 import { Button } from '@mui/material';
-import graceResume from '../../assets/GraceOhlsenResumeCopy.pdf';
+import graceResume from '../../assets/Grace Ohlsen Resume - 10::13:23.pdf';
 import './Resume.css'
 
 export const Resume = () => {
