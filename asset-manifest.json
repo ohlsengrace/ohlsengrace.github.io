@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.cb30544c.css",
-    "main.js": "/static/js/main.890ba09c.js",
+    "main.js": "/static/js/main.735102b9.js",
     "static/js/787.a2bc199b.chunk.js": "/static/js/787.a2bc199b.chunk.js",
     "static/media/aspen.png": "/static/media/aspen.6c8ac6620093a83dbcd4.png",
     "static/media/hero.jpeg": "/static/media/hero.bf0fd5aaa3c611ed67e7.jpeg",
     "static/media/BCNA.png": "/static/media/BCNA.f5a7b3d66de9cba195af.png",
+    "static/media/ScriSports.png": "/static/media/ScriSports.986cc0e2fe9e730171bc.png",
     "static/media/HawaiiProfile.jpg": "/static/media/HawaiiProfile.c67b8581f677fc8f574e.jpg",
-    "static/media/SS.png": "/static/media/SS.66e2c34fb941a02788b6.png",
     "static/media/RefCaseViz.png": "/static/media/RefCaseViz.76c3bf3687f84598eeed.png",
     "static/media/ManagePortfolio.png": "/static/media/ManagePortfolio.b58513b7bd1cf918a6f5.png",
     "static/media/graceCursive.png": "/static/media/graceCursive.d0a945b8c77ed17098d9.png",
     "static/media/Grace Ohlsen Resume - 10::13:23.pdf": "/static/media/Grace Ohlsen Resume - 10::13:23.4b0860b35c7e964cb5b8.pdf",
     "index.html": "/index.html",
     "main.cb30544c.css.map": "/static/css/main.cb30544c.css.map",
-    "main.890ba09c.js.map": "/static/js/main.890ba09c.js.map",
+    "main.735102b9.js.map": "/static/js/main.735102b9.js.map",
     "787.a2bc199b.chunk.js.map": "/static/js/787.a2bc199b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cb30544c.css",
-    "static/js/main.890ba09c.js"
+    "static/js/main.735102b9.js"
   ]
 }
