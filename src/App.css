@@ -31,8 +31,8 @@ p {
 }
   
 .section {
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     width: 100%;
 }
 
@@ -47,6 +47,7 @@ p {
     width: 100%;
     height: auto;;
     position: absolute;
+    z-index: 1000;
 }
   
 .nav-links {

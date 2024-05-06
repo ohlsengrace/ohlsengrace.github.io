@@ -1,200 +1,77 @@
 import './Projects.css';
-import { useState, useEffect,useMemo } from 'react';
-import { IconButton } from '@mui/material';
+import { useMemo } from 'react';
+import { CheckCircleOutline, Schedule } from '@mui/icons-material';
 
-import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
-import projOneImg from '../../assets/Thumbnail.png';
-import projTwoImg from '../../assets/hitachi.png';
-import projThreeImg from '../../assets/blueprint.png';
-import projFourImg from '../../assets/MotiYoda.jpeg';
-import projFiveImg from '../../assets/nodejs.png';
-
+import projOneImg from '../../assets/ManagePortfolio.png';
+import projTwoImg from '../../assets/RefCaseViz.png';
+import projThreeImg from '../../assets/BCNA.png';
+import projFourImg from '../../assets/ScriSports.png'
 
 export const Projects = () => {
-
-  const projects = useMemo(() => [
-    
-      {
-        id: 0,
-        title: 'Personal Website',
-        status: 'In Progress',
-        subtitle: 'Website to display my profile, projects, and resume using ReactJS and GitHub pages.',
-        image: projOneImg,
-        imageAlt: 'ohlsengrace.github.io',
-      },
-      {
-        id: 1,
-        title: 'HE Internal Tool',
-        status: 'In Progress',
-        subtitle: 'Redesign of front-end for an internal tool at Hitachi Energy using ReactJS.',
-        image: projTwoImg,
-        imageAlt: 'HE VS Reg Site'
-      },
-      {
-        id: 2,
-        title: 'Blueprint Boulder',
-        status: 'TBD',
-        subtitle: "I volunteer for Blueprint Boulder, a non-profit that creates technologies for other non-profits. This year's project is TBD.",
-        image: projThreeImg,
-        imageAlt: 'Blueprint Boulder',
-        link: 'https://blueprintboulder.org/'
-      },
-      {
-        id: 3,
-        title: "MotiYoda",
-        subtitle: "Python program that alters motivational quotes to resemble Yoda's speech, object-subject-verb structure. Created for CU's 24-hour Hackathon.",
-        image: projFourImg,
-        imageAlt: 'https://www.linkedin.com/posts/lucaangeletti_do-or-do-not-there-is-no-try-yoda-activity-6437971031696113664-4Bq1/',
-        link: 'https://github.com/maxwmeiser/hackathon-march2022'
-      },
-      {
-        id: 4,
-        title: "Pinventory",
-        subtitle: "Led team to create a NodeJS backend for a textbook inventory web portal. Made for high school to use to track textbooks.",
-        image: projFiveImg,
-        imageAlt: 'https://www.forestadmin.com/blog/best-node-js-apps-examples-to-inspire-your-next-project/',
-        link: 'https://github.com/ohlsengrace/public-git/tree/main/pinventory_backend-main'
-      }
-    
-  ], []); // Empty dependency array to memoize the projects array
-
-
-
-
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const [numDisplayed, setNumDisplayed] = useState(3);
-
-  const numSlides = projects.length;
-  const [atStart, setAtStart] = useState(true);
-  const [atEnd, setAtEnd] = useState(false);
-
-  const [activeSlides, setActiveSlides] = useState(projects.slice(0, numDisplayed));
-
-
-
-
-  // Update windowWidth when the window is resized
-  useEffect(() => {
-    function handleResize() {
-      setWindowWidth(window.innerWidth);
-    }
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-
-  // Calculate the numDisplayed based on windowWidth
-  useEffect(() => {
-    // Define a function to calculate the variable
-    function calculateNumDisplayed(width) {
-      // Adjust this logic as needed for your specific requirements
-      if (width >= 1200) {
-        return 3;
-      } else if (width >= 800) {
-        return 2;
-      } else {
-        return 1;
-      }
-    }
-
-    // Update the variable based on windowWidth
-    const newNumDisplayed = calculateNumDisplayed(windowWidth);
-    setNumDisplayed(newNumDisplayed);
-
-
-  }, [windowWidth]);
-
-
-  // activeSlides is the array of slides that are currently displayed
-  useEffect(() => {
-    // Functional update to ensure that the activeSlides state is updated based on the previous state
-    setActiveSlides((prevActiveSlides) => {
-      // If the previous activeSlides is empty, return the first numDisplayed slides
-      if (prevActiveSlides.length === 0) {
-        return projects.slice(0, numDisplayed);
-      }
-
-      // If the previous activeSlides is not empty, return the next numDisplayed slides
-      return projects.slice(
-        prevActiveSlides[0].id,
-        prevActiveSlides[0].id + numDisplayed
-      );
-    });
-  }, [numDisplayed,projects]);
-
-  // Change atEnd and atStart when activeSlides changes
-  useEffect(() => {
-    if (activeSlides[0].id === 0) {
-      setAtStart(true);
-    } else {
-      setAtStart(false);
-    }
-
-    if (activeSlides[0].id + numDisplayed >= numSlides) {
-      setAtEnd(true);
-    } else {
-      setAtEnd(false);
-    }
-  }, [activeSlides, numDisplayed, numSlides]);
-
-
-
-  // Move one slide forward in the carousel
-  function nextProject() {
-    const nextIndex = activeSlides[0].id + 1;
-    if (nextIndex + numDisplayed <= numSlides) {
-      setActiveSlides(projects.slice(nextIndex, nextIndex + numDisplayed));
-    }
-  }
-
-  // Move one slide backward in the carousel
-  function backProject() {
-
-    const nextIndex = activeSlides[0].id - 1;
-    if (nextIndex >= 0) {
-      setActiveSlides(projects.slice(nextIndex, nextIndex + numDisplayed));
-    }
-  }
-
-
-  return (
-    <div className='Projects'>
-      <h1>Projects</h1>
-      <div className='projects'>
-        <IconButton className='btn' onClick={backProject} disabled={atStart}>
-          <KeyboardArrowLeftIcon />
-        </IconButton>
+    const projects = useMemo(() => [
         {
+            id: 0,
+            title: 'Hitachi Energy Project and Capstone',
+            status: 2,
+            image: projTwoImg,
+            imageAlt: 'RefCase Vizualisation Tool offered by Hitachi Energy',
+            description: "During my internship at Hitachi Energy, I completed two significant projects. Firstly, I augmented their existing codebase for energy market forecasts by incorporating crucial hydrogen energy data. Additionally, for my capstone, I developed a client management portal for the Velocity Suite products offered by Hitachi. After interviewing customer support, I created and presented a Figma mockup of the new website design to all of the stakeholders. Then, I created an epic and user stories using the company's Scrum methodology practices. Finally, I used ReactJS, ASP.NET, and SQL for my stack technologies."
+        },
+        {
+            id: 1,
+            title: 'BCNA Wildlife : Database for Front Range Wildlife',
+            status: 1,
+            image: projThreeImg,
+            imageAlt: 'The search page for the BCNA website created by Blueprint Boulder',
+            link: 'https://blueprintboulder.org/',
+            description: "As a member of Blueprint Boulder, I worked on a project for the Boulder County Nature Association. We created a web portal that made it easier to add, manage, and search through Front Range Wildlife. My main contribution was the functionality and design of the search page. It consisted of keyword search, filtration by nested categories, sorting, as well as filtering by shared characteristics between categories. All of the work was done for charity and we are still in the process of development and testing."
+        },
+        {
+            id: 2,
+            title: 'Scri Sports Mobile App ',
+            link: 'https://www.scrisports.com/about-us',
+            status: 2,
+            image: projFourImg,
+            imageAlt: `The website for Scri Sports`,
+            description: "During my tenure with Scri Sports, a dynamic sports startup, I played a pivotal role in the development phase, assisting in the creation of wireframes and developing the initial iteration of their flagship mobile application. Leveraging Flutter, Dart, and Google Firebase, I crafted an intuitive user experience for both iOS and Android platforms."
+        },
+        {
+            id: 3,
+            title: 'Mock Stocks : Stock Market Simulation Game',
+            link: 'https://github.com/rt0328/TheMoneyProject',
+            status: 2,
+            image: projOneImg,
+            imageAlt: `The Mock Stocks player manage portfolio page`,
+            description: "This group project was made for CSCI 3308 Software Development Methods and Tools. Mock Stocks is a free stock game simulation designed to help young adults build an understanding of the stock market and how to trade. Players can form groups with their friends and compete to see who has the best stock trading abilities. A video demonstration and docker container is included in the repo, so check it out!"
+        },
+    ], []); // Empty dependency array to memoize the projects array
 
-          activeSlides.map((slide) => {
-            return (
-              <div className='project'>
-                <img src={slide.image} alt={slide.imageAlt} />
-
-                {slide.link ?
-                  <h3>
-                    <a href={slide.link} target='_blank' rel='noreferrer'>{slide.title}</a>
-                  </h3>
-                  :
-                  <h3>{slide.title}</h3>
-                }
-                <h4>{slide.subtitle}</h4>
-              </div>
-            )
-          })
-
-        }
-        <IconButton className='btn' onClick={nextProject} disabled={atEnd}>
-          <KeyboardArrowRightIcon />
-        </IconButton>
-
-      </div>
-    </div>
-  )
+    return (
+        <div className='projects'>
+            <h1>Projects</h1>
+            {projects.map((project) => (
+                <div className='project' key={project.id}>
+                    <img className='proj-image' src={project.image} alt={project.imageAlt}></img>
+                    <div className='proj-info'>
+                        <a href={project.link}><h4 className='proj-title'>{project.title}</h4></a>
+                        <div className="proj-status">
+                            {project.status === 1 ? (
+                                <>
+                                    <Schedule/>
+                                    <p className='proj-status'>In Progress</p>
+                                </>
+                            ) : project.status === 2 ? (
+                                <>
+                                    <CheckCircleOutline/>
+                                    <p className='proj-status'>Completed</p>
+                                </>
+                            ) : null}
+                        </div>
+                        <p className='proj-description'>{project.description}</p>
+                    </div>
+                </div>
+            ))}
+        </div>
+    );
 }
